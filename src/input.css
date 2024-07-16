@@ -6,6 +6,10 @@
 
 @layer base {
    body {
-    @apply bg-background
+    @apply bg-background font-bodyContent text-primary
+   }
+
+   span {
+      @apply text-secondary
    }
 }

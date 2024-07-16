@@ -4,9 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>MaileHereko</title>
   </head>
-  <body>
-    <h1 class="text-blue-500 font-bold text-2xl">Hello World</h1>
+  <body class="w-full container mx-auto">
+    <nav class="w-full h-28">
+      <div
+        class="flex items-center justify-between px-5 md:px-10 w-full h-full"
+      >
+        <img src="../public/logo.png" width="60px" height="60px" />
+
+        <ul
+          class="hidden md:flex items-center gap-6 text-[18px] font-bold text-whiteShade"
+        >
+          <li class="hover:text-secondary duration-200 ease-out cursor-pointer">
+            Movies
+          </li>
+          <li class="hover:text-secondary duration-200 ease-out cursor-pointer">
+            TV Shows
+          </li>
+          <li class="hover:text-secondary duration-200 ease-out cursor-pointer">
+            Suggest Me ->
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="py-10 md:py-20 w-full px-5 md:px-10">
+      <div class="flex flex-col items-start gap-2">
+        <h1 class="text-[32px] md:text-[64px] font-bold">MaileHereko</h1>
+
+        <p class="max-w-[700px] text-[16px] text-whiteShade font-semibold">
+          List of movies and TV Shows, I, <span>Pramod Poudel</span> have
+          watched till date. Explore what I have watched and also feel free to
+          make a <span>suggestion.</span>
+        </p>
+
+        <div class="py-5">
+          <div
+            class="flex items-center border border-whiteShade p-3 rounded-xl gap-3 text-whiteShade bg-[#101726]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              class="size-8"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+            <input
+              type="search"
+              class="bg-transparent w-full outline-none"
+              placeholder="Search movies or Tv Shows"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="movies"
+        class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 items-center gap-8 px-4"
+      ></div>
+    </main>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>

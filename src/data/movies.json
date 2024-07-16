@@ -1,0 +1,11 @@
+{
+  "movies": [
+    { "label": "Avengers: Age of Ultron", "image": "../../public/avengers.jpg" },
+    { "label": "Avengers: Age of Ultron", "image": "../../public/avengers.jpg" },
+    { "label": "Avengers: Age of Ultron", "image": "../../public/avengers.jpg" },
+    { "label": "Avengers: Age of Ultron", "image": "../../public/avengers.jpg" },
+    { "label": "Avengers: Age of Ultron", "image": "../../public/avengers.jpg" },
+    { "label": "Avengers: Age of Ultron", "image": "../../public/avengers.jpg" },
+    { "label": "Avengers: Age of Ultron", "image": "../../public/avengers.jpg" }
+  ]
+}

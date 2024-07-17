@@ -1,11 +1,34 @@
 {
   "movies": [
-    { "label": "Avengers: Age of Ultron", "image": "../../public/avengers.jpg" },
-    { "label": "Avengers: Age of Ultron", "image": "../../public/avengers.jpg" },
-    { "label": "Avengers: Age of Ultron", "image": "../../public/avengers.jpg" },
-    { "label": "Avengers: Age of Ultron", "image": "../../public/avengers.jpg" },
-    { "label": "Avengers: Age of Ultron", "image": "../../public/avengers.jpg" },
-    { "label": "Avengers: Age of Ultron", "image": "../../public/avengers.jpg" },
-    { "label": "Avengers: Age of Ultron", "image": "../../public/avengers.jpg" }
+    {
+      "id": "1",
+      "label": "Movie 1",
+      "image": "../../public/avengers.jpg",
+      "description": "Description for Movie 1"
+    },
+    {
+      "id": "2",
+      "label": "Movie 2",
+      "image": "../../public/avengers.jpg",
+      "description": "Description for Movie 2"
+    },
+    {
+      "id": "3",
+      "label": "Movie 3",
+      "image": "../../public/avengers.jpg",
+      "description": "Description for Movie 3"
+    },
+    {
+      "id": "4",
+      "label": "Movie 4",
+      "image": "../../public/avengers.jpg",
+      "description": "Description for Movie 3"
+    },
+    {
+      "id": "5",
+      "label": "Movie 5",
+      "image": "../../public/avengers.jpg",
+      "description": "Description for Movie 3"
+    }
   ]
 }

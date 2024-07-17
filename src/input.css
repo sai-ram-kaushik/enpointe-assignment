@@ -6,10 +6,11 @@
 
 @layer base {
    body {
-    @apply bg-background font-bodyContent text-primary
+    @apply bg-background font-bodyContent text-primary scrollbar scrollbar-thumb-rose-500 scrollbar-track-red-500
    }
 
    span {
       @apply text-secondary
    }
 }
+ 

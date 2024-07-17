@@ -1,16 +1,15 @@
-fetch("https://imdb-top-100-movies.p.rapidapi.com/", {
+fetch("https://api.themoviedb.org/3/movie/popular?language=en-US&page=1", {
   method: "GET",
   headers: {
-    "x-rapidapi-key": "3b3e121d8bmsh118f89f4b35f7b7p16090cjsndfdc29cbe706",
-    "x-rapidapi-host": "imdb-top-100-movies.p.rapidapi.com",
-  },
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzZDk4MTQxNGM2MjhlOTZhYmY0ZGM0MDg3MWZjOTRhMCIsIm5iZiI6MTcyMTIyNDM0OC4xMjM3MDgsInN1YiI6IjY2OTZhYWYzN2MyYzlmY2E0NzdiOGY5NiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.c5HBgwIaL6J2TqR-z_hJUDTXXB2Od-LCPGpgP6WvbXE'
+  }
 })
   .then((response) => response.json())
   .then((response) => {
-    console.log(response);
     const movieList = document.getElementById("movies");
 
-    response.map((movie, index) => {
+    response.results.map((movie) => {
       const movieDiv = document.createElement("div");
       movieDiv.classList.add(
         "max-w-[300px]",
@@ -22,8 +21,9 @@ fetch("https://imdb-top-100-movies.p.rapidapi.com/", {
       );
       movieDiv.setAttribute("data-id", movie.id);
 
+      const imgUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
       movieDiv.innerHTML = `
-         <img src=${movie.image} class="rounded-xl" />
+         <img src="${imgUrl}" class="rounded-xl cursor-pointer" />
          <p class="py-3 font-bold text-[16px]">${movie.title}</p>
        `;
 

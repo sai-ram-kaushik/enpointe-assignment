@@ -663,9 +663,45 @@ span{
   }
 }
 
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.sticky{
+  position: sticky;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.z-\[998\]{
+  z-index: 998;
+}
+
+.z-\[999\]{
+  z-index: 999;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
 }
 
 .flex{
@@ -685,8 +721,17 @@ span{
   height: 2rem;
 }
 
+.size-5{
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
 .h-28{
   height: 7rem;
+}
+
+.h-\[500px\]{
+  height: 500px;
 }
 
 .h-full{
@@ -697,8 +742,20 @@ span{
   width: 100%;
 }
 
+.max-w-3xl{
+  max-width: 48rem;
+}
+
 .max-w-\[300px\]{
   max-width: 300px;
+}
+
+.max-w-\[400px\]{
+  max-width: 400px;
+}
+
+.max-w-\[600px\]{
+  max-width: 600px;
 }
 
 .max-w-\[700px\]{
@@ -717,12 +774,20 @@ span{
   flex-direction: column;
 }
 
+.flex-col-reverse{
+  flex-direction: column-reverse;
+}
+
 .items-start{
   align-items: flex-start;
 }
 
 .items-center{
   align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .justify-between{
@@ -733,8 +798,16 @@ span{
   gap: 0.5rem;
 }
 
+.gap-20{
+  gap: 5rem;
+}
+
 .gap-3{
   gap: 0.75rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
 }
 
 .gap-6{
@@ -745,8 +818,17 @@ span{
   gap: 2rem;
 }
 
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
 .rounded-xl{
   border-radius: 0.75rem;
+}
+
+.rounded-b-lg{
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 
 .border{
@@ -768,8 +850,27 @@ span{
   background-color: rgb(18 25 41 / var(--tw-bg-opacity));
 }
 
+.bg-background{
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 24 41 / var(--tw-bg-opacity));
+}
+
+.bg-gray-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
 .bg-transparent{
   background-color: transparent;
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-75{
+  --tw-bg-opacity: 0.75;
 }
 
 .p-2{
@@ -778,6 +879,14 @@ span{
 
 .p-3{
   padding: 0.75rem;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.p-1{
+  padding: 0.25rem;
 }
 
 .px-5{
@@ -800,6 +909,19 @@ span{
   padding-bottom: 1.25rem;
 }
 
+.text-center{
+  text-align: center;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-\[16px\]{
   font-size: 16px;
 }
@@ -810,6 +932,16 @@ span{
 
 .text-\[32px\]{
   font-size: 32px;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold{
@@ -823,6 +955,22 @@ span{
 .text-whiteShade{
   --tw-text-opacity: 1;
   color: rgb(118 126 148 / var(--tw-text-opacity));
+}
+
+.text-orange-400{
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-lg{
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-xl{
@@ -860,6 +1008,10 @@ span{
 
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
   }
 
   .md\:px-10{

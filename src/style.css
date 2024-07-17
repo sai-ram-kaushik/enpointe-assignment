@@ -687,12 +687,100 @@ span{
   top: 0px;
 }
 
+.bottom-5{
+  bottom: 1.25rem;
+}
+
+.left-16{
+  left: 4rem;
+}
+
+.top-\[50\%\]{
+  top: 50%;
+}
+
+.bottom-\[50\%\]{
+  bottom: 50%;
+}
+
+.bottom-\[-50\%\]{
+  bottom: -50%;
+}
+
+.bottom-\[-20\%\]{
+  bottom: -20%;
+}
+
+.bottom-\[-10\%\]{
+  bottom: -10%;
+}
+
+.bottom-\[-0\%\]{
+  bottom: -0%;
+}
+
+.bottom-\[-30\%\]{
+  bottom: -30%;
+}
+
+.-bottom-\[-20\%\]{
+  bottom: 20%;
+}
+
+.-bottom-\[20\%\]{
+  bottom: -20%;
+}
+
+.-bottom-\[50\%\]{
+  bottom: -50%;
+}
+
+.-bottom-\[30\%\]{
+  bottom: -30%;
+}
+
+.-bottom-\[-10\%\]{
+  bottom: 10%;
+}
+
+.-top-\[-10\%\]{
+  top: 10%;
+}
+
+.-top-\[10\%\]{
+  top: -10%;
+}
+
+.-bottom-\[10\%\]{
+  bottom: -10%;
+}
+
 .z-\[998\]{
   z-index: 998;
 }
 
 .z-\[999\]{
   z-index: 999;
+}
+
+.z-\[\]{
+  z-index: ;
+}
+
+.z-\[990\]{
+  z-index: 990;
+}
+
+.z-10{
+  z-index: 10;
+}
+
+.-z-\[990\]{
+  z-index: -990;
+}
+
+.-z-10{
+  z-index: -10;
 }
 
 .mx-auto{
@@ -760,6 +848,14 @@ span{
 
 .max-w-\[700px\]{
   max-width: 700px;
+}
+
+.max-w-\[\]{
+  max-width: ;
+}
+
+.max-w-\[500px\]{
+  max-width: 500px;
 }
 
 .cursor-pointer{
@@ -869,6 +965,22 @@ span{
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-background\/75{
+  background-color: rgb(18 24 41 / 0.75);
+}
+
+.bg-black\/75{
+  background-color: rgb(0 0 0 / 0.75);
+}
+
+.bg-black\/30{
+  background-color: rgb(0 0 0 / 0.3);
+}
+
+.bg-black\/50{
+  background-color: rgb(0 0 0 / 0.5);
+}
+
 .bg-opacity-75{
   --tw-bg-opacity: 0.75;
 }
@@ -907,6 +1019,11 @@ span{
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .text-center{
@@ -967,6 +1084,11 @@ span{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-secondary{
+  --tw-text-opacity: 1;
+  color: rgb(124 110 246 / var(--tw-text-opacity));
+}
+
 .shadow-lg{
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -998,6 +1120,10 @@ span{
 }
 
 @media (min-width: 768px){
+  .md\:left-16{
+    left: 4rem;
+  }
+
   .md\:flex{
     display: flex;
   }

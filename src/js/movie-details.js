@@ -21,14 +21,22 @@ document.addEventListener("DOMContentLoaded", function () {
         const coverImg = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
         movieDetailsDiv.innerHTML = `
         <div
-  class="w-full py-10 flex flex-col items-center gap-20 container mx-auto px-5 md:px-10"
+  class="w-full py-10 flex flex-col items-center gap-20 container mx-auto px-5 md:px-10 relative"
 >
-  <div class="mt-10 w-full flex items-center justify-center">
+  <div class="relative mt-10 w-full ">
     <img
       src="${imgUrl}"
       alt="Avengers: Age of Ultron"
       class="rounded-2xl shadow-lg h-[500px] w-full"
     />
+    <div class=" absolute left-0 md:left-16 -bottom-[10%]">
+    <div class="max-w-[500px] bg-black/50 p-4 rounded-2xl">
+    <div class="flex flex-col items-start gap-5 px-10">
+      <p class="text-secondary font-semibold text-xl">MaileHereko /  Movies</p>
+      <h3 class="text-2xl font-bold">${movie.title}</h3>
+    </div>
+  </div>
+  </div>
   </div>
 
   <div

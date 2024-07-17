@@ -3,10 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
     <title>MaileHereko</title>
   </head>
-  <body class="w-full relative">
+  <body class="w-full">
     <nav
       class="w-full h-28 container mx-auto sticky top-0 z-[999] bg-background"
     >
@@ -31,8 +39,11 @@
       </div>
     </nav>
 
-    <main class="py-10 md:py-20 w-full px-5 md:px-10 container mx-auto z-[998]">
-      <div class="flex flex-col items-start gap-2">
+    <main
+      class="py-10 md:py-20 w-full px-5 md:px-10 container mx-auto relative"
+    >
+      <img src="/public/bg.png" class="absolute -z-[990]" />
+      <div class="flex flex-col items-start gap-2 z-[998]">
         <h1 class="text-[32px] md:text-[64px] font-bold">MaileHereko</h1>
 
         <p class="max-w-[700px] text-[16px] text-whiteShade font-semibold">
@@ -61,6 +72,7 @@
             </svg>
             <input
               type="search"
+              id="searchInput"
               class="bg-transparent w-full outline-none"
               placeholder="Search movies or Tv Shows"
             />
@@ -90,7 +102,6 @@
         </p>
       </div>
     </footer>
-
     <script src="./js/index.js"></script>
   </body>
 </html>

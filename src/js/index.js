@@ -34,7 +34,23 @@ fetch("https://api.themoviedb.org/3/movie/popular?language=en-US&page=1", {
 
       movieList.appendChild(movieDiv);
     });
+
+    searchInput.addEventListener("input", () => {
+      const query = searchInput.value.toLowerCase();
+      const movieDivs = movieList.querySelectorAll("div[data-id]");
+      
+      movieDivs.forEach((div) => {
+        const title = div.querySelector("p").textContent.toLowerCase();
+        if (title.includes(query)) {
+          div.style.display = "block";
+        } else {
+          div.style.display = "none";
+        }
+      });
+    });
   })
   .catch((err) => {
     console.log(err);
   });
+
+  
